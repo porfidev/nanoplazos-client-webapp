@@ -1,9 +1,12 @@
-import styles from '../styles/Home.module.css';
+import Link from 'next/link';
 
 export default function Home() {
   return (
-    <div className={styles.container}>
-      <h1>Hello World!</h1>
+    <div>
+      <h1>This is a demo intro please select a flow</h1>
+      <Link href="/new-user">
+        <a>New User Flow</a>
+      </Link>
     </div>
   );
 }
